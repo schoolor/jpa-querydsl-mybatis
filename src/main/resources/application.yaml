@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: local
+  liquibase:
+    change-log: classpath:/db/changelog/master.yaml
+  datasource:
+    driver-class-name: org.h2.Driver
+    name: sa
+    password:
+    url: jdbc:h2:mem:jpa-test
+  devtools:
+    livereload:
+      enabled: true

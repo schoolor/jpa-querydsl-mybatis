@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: order.001.create
+      author: ghost.choe
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: customer_id
+                  type: bigint
+              - column:
+                  name: created_at
+                  type: timestamp with time zone
+              - column:
+                  name: updated_at
+                  type: timestamp with time zone

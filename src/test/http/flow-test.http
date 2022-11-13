@@ -1,0 +1,51 @@
+GET http://localhost:8080/flow-test/simple
+Accept: application/json
+Content-Type: application/json
+
+#
+###
+# [
+#   {
+#     "customerId": 4,
+#     "customerName": "customerA",
+#     "orderId": 7,
+#     "items": [
+#       {
+#         "productId": 1,
+#         "productName": "Toaster",
+#         "listPrice": 100,
+#         "amount": 2
+#       },
+#       {
+#         "productId": 2,
+#         "productName": "TV",
+#         "listPrice": 3000,
+#         "amount": 1
+#       }
+#     ],
+#     "cost": 3200,
+#     "createdAt": null,
+#     "updatedAt": null
+#   },
+#   {
+#     "customerId": 4,
+#     "customerName": "customerA",
+#     "orderId": 10,
+#     "items": [
+#       {
+#         "productId": 3,
+#         "productName": "Piano",
+#         "listPrice": 4000,
+#         "amount": 1
+#       }
+#     ],
+#     "cost": 4000,
+#     "createdAt": null,
+#     "updatedAt": null
+#   }
+# ]
+###
+
+POST http://localhost:8080/flow-test/simple
+Accept: application/json
+Content-Type: application/json
